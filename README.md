@@ -27,20 +27,24 @@ The PPG or pulsating wave signals from [AFE4490](https://www.ti.com/lit/gpn/afe4
 
 ## SpO2
 Oxygen saturation (SpO2) is a measurement of how much oxygen your blood is carrying as a percentage of the maximum it could carry. For a healthy individual, the normal SpO2 should be between 96% to 99%. The ratio of ratios used to estimate SpO2
-![image](https://github.com/dhanvantraj7/aerobiosys_Intern/assets/143879823/26ab371f-a3ea-4cf5-bcb0-81d2e573b4fa)
 
-The code is given by: https://github.com/dhanvantraj7/aerobiosys_Intern/blob/main/spo2.ino
+![image](https://github.com/dhanvantraj7/aerobiosys_Intern/assets/143879823/1bf243bc-302e-4522-92fd-9ea7a1c8c4e6)
+The SpO2 is calculated by (-0.6612 x (R)^4) + (10.0537 x (R)^3) + (-35.8702 x (R)^2) + (12.8909 x (R)) + 100.343
+
+The code is given by: spo2.ino
 
 ## heart rate 
-Heart rate is the number of times your heart beats per minute. A normal resting heart rate should be between 60 to 100 beats per minute, but it can vary from minute to minute.
+Heart rate is the number of times your heart beats per minute. A normal resting heart rate should be between 60 to 100 beats per minute, but it can vary from minute to minute. The heart rate per minute is calculated by (sampling rate/(distance between consecutive peaks)) x 60
 
-The code is given by: https://github.com/dhanvantraj7/aerobiosys_Intern/blob/main/Heart%20rate.ino
+The code is given by: heart_rate.ino
 
+## General algorithm of FFT
 
-Setup Section
+### Setup Section
 Initializes serial communication for debugging.
 Waits until a serial connection is established before proceeding.
-Loop Section
+
+### Loop Section
 Constructs the input data arrays vRealir and vRealred with the acquired signal data (presumably from datair[] and datared[] arrays).
 Calls the FFT.Compute() function to perform the FFT on the input data for both IR and red signals.
 Calls FFT.ComplexToMagnitude() to calculate the magnitudes of the FFT results.
