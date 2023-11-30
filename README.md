@@ -29,12 +29,12 @@ The PPG or pulsating wave signals from [AFE4490](https://www.ti.com/lit/gpn/afe4
 Oxygen saturation (SpO2) is a measurement of how much oxygen your blood is carrying as a percentage of the maximum it could carry. For a healthy individual, the normal SpO2 should be between 96% to 99%. The ratio of ratios used to estimate SpO2
 ![image](https://github.com/dhanvantraj7/aerobiosys_Intern/assets/143879823/26ab371f-a3ea-4cf5-bcb0-81d2e573b4fa)
 
-The code is given by: 
+The code is given by: https://github.com/dhanvantraj7/aerobiosys_Intern/blob/main/spo2.ino
 
 ## heart rate 
 Heart rate is the number of times your heart beats per minute. A normal resting heart rate should be between 60 to 100 beats per minute, but it can vary from minute to minute.
 
-The code is given by: 
+The code is given by: https://github.com/dhanvantraj7/aerobiosys_Intern/blob/main/Heart%20rate.ino
 
 
 Setup Section
