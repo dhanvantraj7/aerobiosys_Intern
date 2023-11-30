@@ -41,6 +41,11 @@ The code is given by: heart_rate.ino
 ## General algorithm of FFT
 
 ### Setup Section
+
+- George Washington
+* John Adams
++ Thomas Jefferson
+
 -Initializes serial communication for debugging.
 +Waits until a serial connection is established before proceeding.
 
