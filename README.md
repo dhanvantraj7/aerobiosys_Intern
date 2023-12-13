@@ -47,7 +47,7 @@ The code is given by: heart_rate.ino
 
 ### Loop Section
 
-- Constructs the input data arrays vRealir and vRealred with the acquired signal data (presumably from datair[] and datared[] arrays).
+- Constructs the input data arrays vRealir and vRealred with the acquired signal data (presumably from datair[ ] and datared[ ] arrays).
 * Calls the FFT.Compute() function to perform the FFT on the input data for both IR and red signals.
 * Calls FFT.ComplexToMagnitude() to calculate the magnitudes of the FFT results.
 * Searches for the maximum magnitude value (the peak) in the calculated magnitudes for both IR and red signals.
